@@ -1,0 +1,20 @@
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .btns {
+    background: #231815;
+}
+
+h1 {
+    color: #231815;
+}
+
+.price {
+    color: #E45302;
+}
