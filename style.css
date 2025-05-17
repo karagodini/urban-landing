@@ -1,8 +1,6 @@
 body {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     width: 100%;
-    max-width: 1400px;
 }
 
 p {
@@ -16,6 +14,89 @@ a {
 
 header .btns {
     background: #231815;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+header .btns .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+header .btns .container .block {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .btns .container .block .buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 440px;
+}
+
+header .btns a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+header .header {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .header .logo {
+    width: 217px;
+    height: 57px;
+}
+
+nav {
+    width: 480px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #231815;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+search {
+    border: 1px solid #F5F5F5;
+    height: 40px;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 170px;
+}
+
+search input {
+    width: 80%;
+    outline: none;
+    border: none;
+    color: #231815;
+    font-size: 16px;
+}
+
+header .header .cart img {
+    width: 32px;
+    height: 32px;
+}
+
+main {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 h1 {
