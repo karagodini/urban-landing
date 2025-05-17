@@ -147,6 +147,7 @@ h1 {
     margin: 20px;
     width: 100%;
     max-width: 310px;
+    cursor: pointer;
 }
 
 .product .cart {
@@ -174,6 +175,20 @@ h1 {
     width: 100%;
 }
 
+.product .hover {
+    background: rgba(245, 245, 245, 0.7);
+    width: 100%;
+    height: 88px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+.product:hover .cart .hover {
+    display: flex;
+}
+
 .product .cart a {
     background: #E45302;
     color: #fff;
@@ -182,7 +197,7 @@ h1 {
     height: 48px;
     display: flex;
     position: absolute;
-    bottom: 30px;
+    bottom: 20px;
     left: 9%;
     align-items: center;
     justify-content: center;
@@ -237,7 +252,7 @@ footer .title {
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 footer .text {
@@ -250,7 +265,10 @@ footer .container-1, footer .container-2, footer .container-3, footer .container
 }
 
 footer .container-1 {
-
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 footer .container-1 img {
@@ -284,11 +302,31 @@ footer .container-3 {
     flex-direction: column;
 }
 
+footer .container-3 a {
+    color: #F5F5F5;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}
+
 footer .container-4 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+}
+
+footer .container-4 a {
+    color: #808080;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 20px;
+}
+
+footer .container-4 .logos {
+    width: 215px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 75px;
 }
 
 footer .container-4 img {
