@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Karataki';
+  src: url('fonts/korataki.otf') format('opentype');
+}
+
 body {
     margin: 0 auto;
     width: 100%;
@@ -143,18 +148,19 @@ h1 {
     color: #231815;
     margin-top: 50px;
     font-size: 44px;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Karataki', sans-serif;
 }
 
 .products {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .product {
-    margin: 20px;
-    width: 100%;
-    max-width: 310px;
+    margin: 10px;
+    width: 23%;
+    max-width: 100%;
     cursor: pointer;
 }
 
@@ -190,6 +196,8 @@ h1 {
     position: absolute;
     bottom: 0;
     display: none;
+    align-items: center;
+    justify-content: center;
     transition: opacity 0.3s ease;
 }
 
@@ -204,9 +212,6 @@ h1 {
     width: 258px;
     height: 48px;
     display: flex;
-    position: absolute;
-    bottom: 20px;
-    left: 9%;
     align-items: center;
     justify-content: center;
     font-family: 'Lato', sans-serif;
@@ -365,39 +370,7 @@ footer .container-4 img {
     }
 }
 
-@media (max-width: 770px) {
-    header .header .logo {
-        margin-left: 20px;
-    }
-
-    header .btns, nav, search, header .cart {
-        display: none !important;
-    }
-
-    .btn-mob-menu {
-        display: block;
-        width: 40px;
-        height: 40px;
-        cursor: pointer;
-        margin-right: 20px;
-    }
-
-    h1 {
-        font-size: 32px;
-        margin-left: 20px;
-    }
-
-    .products {
-        justify-content: space-between;
-        padding: 0 10px;
-    }
-
-    .product {
-        width: 44%;
-        max-width: 100%;
-        margin: 10px;
-    }
-
+@media (max-width: 1100px) {
     footer .containers {
         height: 400px;
     }
@@ -450,35 +423,47 @@ footer .container-4 img {
     }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 1000px) {
+    .product {
+        width: 30%;
+    }
+}
+
+@media (max-width: 770px) {
     header .header .logo {
-        width: 141px;
-        height: 36px;
+        margin-left: 20px;
+    }
+
+    header .btns, nav, search, header .cart {
+        display: none !important;
+    }
+
+    .btn-mob-menu {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        margin-right: 20px;
     }
 
     h1 {
-        font-size: 24px;
+        font-size: 32px;
+        margin-left: 20px;
     }
 
-    .product .cart .label {
-        font-size: 14px;
-        width: 50px;
+    .products {
+        justify-content: space-between;
+        padding: 0 10px;
     }
 
-    .product .name, .product .prices .price, .product .prices .old-price {
-        font-size: 16px;
+    .product {
+        width: 44%;
+        max-width: 100%;
+        margin: 10px;
     }
+}
 
-    .product .hover {
-        height: 80px;
-    }
-
-    .product .cart a {
-        width: 90%;
-        height: 40px;
-        left: 5%;
-    }
-
+@media (max-width: 650px) {
     footer .containers {
         padding: 20px 0;
         height: 800px;
@@ -515,5 +500,35 @@ footer .container-4 img {
 
     footer .container-4 .logos {
         margin-top: 30px;
+    }
+}
+
+@media (max-width: 390px) {
+    header .header .logo {
+        width: 141px;
+        height: 36px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .product .cart .label {
+        font-size: 14px;
+        width: 50px;
+    }
+
+    .product .name, .product .prices .price, .product .prices .old-price {
+        font-size: 16px;
+    }
+
+    .product .hover {
+        height: 80px;
+    }
+
+    .product .cart a {
+        width: 90%;
+        height: 40px;
+        left: 5%;
     }
 }
