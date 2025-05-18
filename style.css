@@ -95,6 +95,10 @@ search img {
     height: 22px;
 }
 
+search .btn-white {
+    display: none;
+}
+
 header .header .cart img {
     width: 32px;
     height: 32px;
@@ -123,6 +127,10 @@ header .header .cart .count {
     position: absolute;
     top: 5px;
     left: 25px;
+}
+
+.btn-mob-menu {
+    display: none;
 }
 
 main {
@@ -236,6 +244,7 @@ h1 {
 
 footer {
     background: #0C0C0C;
+    position: relative;
 }
 
 footer .containers {
@@ -292,6 +301,11 @@ footer .container-2 {
     flex-direction: column;
 }
 
+footer .container-2 .block {
+    display: flex;
+    flex-direction: column;
+}
+
 footer .container-2 a {
     color: #F5F5F5;
     font-family: 'Lato', sans-serif;
@@ -331,4 +345,175 @@ footer .container-4 .logos {
 
 footer .container-4 img {
     height: 30px;
+}
+
+@media (max-width: 1600px) {
+    search {
+        border: none;
+        justify-content: flex-end;
+        padding: 0;
+    }
+
+    search input, search img {
+        display: none;
+    }
+
+    search .btn-white {
+        display: block;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 770px) {
+    header .header .logo {
+        margin-left: 20px;
+    }
+
+    header .btns, nav, search, header .cart {
+        display: none !important;
+    }
+
+    .btn-mob-menu {
+        display: block;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin-left: 20px;
+    }
+
+    .products {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .product {
+        width: 44%;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    footer .containers {
+        height: 400px;
+    }
+
+    footer .container-1 p {
+        position: absolute;
+        right: 20px;
+        bottom: 60px;
+        width: 55%;
+    }
+
+    footer .container-1 img {
+        width: 180px;
+        height: 47px;
+        position: relative;
+        left: 20px;
+    }
+
+    footer .container-2 {
+        flex-direction: row;
+        position: absolute;
+        left: 20px;
+        top: 140px;
+        width: 70%;
+    }
+
+    footer .container-2 .block {
+        width: 50%;
+    }
+
+    footer .container-2 .block-bottom {
+        margin-left: -60px;
+    }
+
+    footer .container-2 .block-bottom .title {
+        margin-top: 0 !important;
+    }
+
+    footer .container-3 {
+        position: absolute;
+        top: 140px;
+        right: 0;
+    }
+
+    footer .container-4 {
+        position: absolute;
+        bottom: 80px;
+        left: 20px;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 390px) {
+    header .header .logo {
+        width: 141px;
+        height: 36px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .product .cart .label {
+        font-size: 14px;
+        width: 50px;
+    }
+
+    .product .name, .product .prices .price, .product .prices .old-price {
+        font-size: 16px;
+    }
+
+    .product .hover {
+        height: 80px;
+    }
+
+    .product .cart a {
+        width: 90%;
+        height: 40px;
+        left: 5%;
+    }
+
+    footer .containers {
+        padding: 20px 0;
+        height: 800px;
+    }
+
+    footer .container-1 p {
+        bottom: 20px;
+        left: 20px;
+        width: 80%;
+    }
+
+    footer .container-2 {
+        top: 100px;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    footer .container-2 .block-bottom {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    footer .container-3 {
+        top: 320px;
+        left: 20px;
+        width: 80%;
+    }
+
+    footer .container-4 {
+        width: 80%;
+        bottom: 130px;
+    }
+
+    footer .container-4 .logos {
+        margin-top: 30px;
+    }
 }
